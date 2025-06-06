@@ -1,0 +1,106 @@
+body {
+    background-color: #333;
+    color: #f0f0f0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    /* Base font size */
+}
+
+.dw-container {
+    background-color: #0000AA;
+    /* Classic blue */
+    color: #FFFFFF;
+    border: 2px solid #5555FF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 80ch;
+    /* Roughly 80 characters wide */
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.dw-title-bar {
+    background-color: #5555FF;
+    color: #FFFF00;
+    /* Yellow text */
+    padding: 3px 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dw-ruler {
+    background-color: #000080;
+    /* Darker blue */
+    color: #CCCCCC;
+    padding: 2px 8px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1.2em;
+    line-height: 1.2em;
+}
+
+#editor {
+    background-color: #0000AA;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    resize: none;
+    width: calc(100% - 16px);
+    /* Adjust for padding */
+    height: 25em;
+    /* Roughly 25 lines */
+    padding: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.2em;
+    /* Ensure consistent line height */
+    overflow-y: scroll;
+    /* Add scrollbar if content exceeds height */
+}
+
+.dw-status-bar {
+    background-color: #000080;
+    color: #FFFF00;
+    /* Yellow text */
+    padding: 3px 8px;
+    font-size: 0.9em;
+}
+
+.dw-function-keys {
+    background-color: #000055;
+    /* Even darker blue */
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+.dw-function-keys button {
+    background-color: #7777CC;
+    color: #FFFFFF;
+    border: 1px solid #AAAAFF;
+    padding: 5px 8px;
+    font-family: inherit;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin: 2px;
+    flex-grow: 1;
+    /* Distribute space */
+    min-width: 80px;
+    /* Minimum width for buttons */
+}
+
+.dw-function-keys button:hover {
+    background-color: #9999DD;
+}
+
+.dw-function-keys button:active {
+    background-color: #5555AA;
+}
